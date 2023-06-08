@@ -1224,13 +1224,6 @@ void FMSTR_SendResponse(FMSTR_BPTR pResponse, FMSTR_SIZE8 nLength)
     if ((pcm_wFlags.flg.bUsbCdcStartApp) && (pcm_wFlags.flg.bTxActive) && (pcm_wFlags.flg.bUsbCdcStartTrans))
         /* Finalize USB packet to transmit and send packet */
         FMSTR_SendUsbPacket();
-    else
-#if FMSTR_USB_LEGACY_STACK
-        /* Previous Send is complete. Queue next receive */
-        (void)USB_Class_CDC_Interface_DIC_Recv_Data(FMSTR_USB_CDC_ID, NULL, 0);
-#else
-        CDC_Receive_FS(pcm_usbRecvBuf, DIC_BULK_OUT_ENDP_PACKET_SIZE);
-#endif
 
 #elif FMSTR_USE_MBED
     /* initialize communication */
