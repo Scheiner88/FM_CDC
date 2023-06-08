@@ -808,10 +808,6 @@ static FMSTR_BOOL FMSTR_InitUSB(void)
     cdc_config.class_specific_callback.arg = &pcm_usbHandle;
     cdc_config.desc_callback_ptr =  &desc_callback;
 
-    /* Initialize the USB interface */
-    if(USB_Class_CDC_Init(FMSTR_USB_CONTROLLER_ID, &cdc_config, &pcm_usbHandle) != USB_OK)
-        return FMSTR_FALSE;
-
     return FMSTR_TRUE;
 }
 
