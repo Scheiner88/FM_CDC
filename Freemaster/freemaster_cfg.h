@@ -28,10 +28,10 @@
 #define FMSTR_CAN_BASE         0x400A4000u  /* FlexCAN1 base on K60 */
 #define FMSTR_CAN_INTERRUPT    53   /* FlexCAN1 interrupt vector */
 
-#define FMSTR_DISABLE          0    /* To disable all FreeMASTER functionalities */
+#define FMSTR_DISABLE          1    /* To disable all FreeMASTER functionalities */
 #define FMSTR_USE_SCI          0    /* To select SCI communication interface */
 #define FMSTR_USE_FLEXCAN      0    /* To select FlexCAN communication interface */
-#define FMSTR_USE_USB_CDC      1    /* To select USB CDC communication interface */
+#define FMSTR_USE_USB_CDC      0    /* To select USB CDC communication interface */
 #define FMSTR_USE_PDBDM        0    /* To select Packet Driven BDM communication interface (optional) */
 
 #define FMSTR_FLEXCAN_TXMB     0
