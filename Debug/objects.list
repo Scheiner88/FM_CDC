@@ -22,6 +22,7 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
 "./Freemaster/freemaster_Kxx.o"
+"./Freemaster/freemaster_USB.o"
 "./Freemaster/freemaster_appcmd.o"
 "./Freemaster/freemaster_bdm.o"
 "./Freemaster/freemaster_can.o"

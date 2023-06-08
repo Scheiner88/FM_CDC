@@ -6,6 +6,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Freemaster/freemaster_Kxx.c \
+../Freemaster/freemaster_USB.c \
 ../Freemaster/freemaster_appcmd.c \
 ../Freemaster/freemaster_bdm.c \
 ../Freemaster/freemaster_can.c \
@@ -20,6 +21,7 @@ C_SRCS += \
 
 OBJS += \
 ./Freemaster/freemaster_Kxx.o \
+./Freemaster/freemaster_USB.o \
 ./Freemaster/freemaster_appcmd.o \
 ./Freemaster/freemaster_bdm.o \
 ./Freemaster/freemaster_can.o \
@@ -34,6 +36,7 @@ OBJS += \
 
 C_DEPS += \
 ./Freemaster/freemaster_Kxx.d \
+./Freemaster/freemaster_USB.d \
 ./Freemaster/freemaster_appcmd.d \
 ./Freemaster/freemaster_bdm.d \
 ./Freemaster/freemaster_can.d \
@@ -54,7 +57,7 @@ Freemaster/%.o Freemaster/%.su Freemaster/%.cyclo: ../Freemaster/%.c Freemaster/
 clean: clean-Freemaster
 
 clean-Freemaster:
-	-$(RM) ./Freemaster/freemaster_Kxx.cyclo ./Freemaster/freemaster_Kxx.d ./Freemaster/freemaster_Kxx.o ./Freemaster/freemaster_Kxx.su ./Freemaster/freemaster_appcmd.cyclo ./Freemaster/freemaster_appcmd.d ./Freemaster/freemaster_appcmd.o ./Freemaster/freemaster_appcmd.su ./Freemaster/freemaster_bdm.cyclo ./Freemaster/freemaster_bdm.d ./Freemaster/freemaster_bdm.o ./Freemaster/freemaster_bdm.su ./Freemaster/freemaster_can.cyclo ./Freemaster/freemaster_can.d ./Freemaster/freemaster_can.o ./Freemaster/freemaster_can.su ./Freemaster/freemaster_lin.cyclo ./Freemaster/freemaster_lin.d ./Freemaster/freemaster_lin.o ./Freemaster/freemaster_lin.su ./Freemaster/freemaster_pipes.cyclo ./Freemaster/freemaster_pipes.d ./Freemaster/freemaster_pipes.o ./Freemaster/freemaster_pipes.su ./Freemaster/freemaster_protocol.cyclo ./Freemaster/freemaster_protocol.d ./Freemaster/freemaster_protocol.o ./Freemaster/freemaster_protocol.su ./Freemaster/freemaster_rec.cyclo ./Freemaster/freemaster_rec.d ./Freemaster/freemaster_rec.o ./Freemaster/freemaster_rec.su ./Freemaster/freemaster_scope.cyclo ./Freemaster/freemaster_scope.d ./Freemaster/freemaster_scope.o ./Freemaster/freemaster_scope.su ./Freemaster/freemaster_serial.cyclo ./Freemaster/freemaster_serial.d ./Freemaster/freemaster_serial.o ./Freemaster/freemaster_serial.su ./Freemaster/freemaster_sfio.cyclo ./Freemaster/freemaster_sfio.d ./Freemaster/freemaster_sfio.o ./Freemaster/freemaster_sfio.su ./Freemaster/freemaster_tsa.cyclo ./Freemaster/freemaster_tsa.d ./Freemaster/freemaster_tsa.o ./Freemaster/freemaster_tsa.su
+	-$(RM) ./Freemaster/freemaster_Kxx.cyclo ./Freemaster/freemaster_Kxx.d ./Freemaster/freemaster_Kxx.o ./Freemaster/freemaster_Kxx.su ./Freemaster/freemaster_USB.cyclo ./Freemaster/freemaster_USB.d ./Freemaster/freemaster_USB.o ./Freemaster/freemaster_USB.su ./Freemaster/freemaster_appcmd.cyclo ./Freemaster/freemaster_appcmd.d ./Freemaster/freemaster_appcmd.o ./Freemaster/freemaster_appcmd.su ./Freemaster/freemaster_bdm.cyclo ./Freemaster/freemaster_bdm.d ./Freemaster/freemaster_bdm.o ./Freemaster/freemaster_bdm.su ./Freemaster/freemaster_can.cyclo ./Freemaster/freemaster_can.d ./Freemaster/freemaster_can.o ./Freemaster/freemaster_can.su ./Freemaster/freemaster_lin.cyclo ./Freemaster/freemaster_lin.d ./Freemaster/freemaster_lin.o ./Freemaster/freemaster_lin.su ./Freemaster/freemaster_pipes.cyclo ./Freemaster/freemaster_pipes.d ./Freemaster/freemaster_pipes.o ./Freemaster/freemaster_pipes.su ./Freemaster/freemaster_protocol.cyclo ./Freemaster/freemaster_protocol.d ./Freemaster/freemaster_protocol.o ./Freemaster/freemaster_protocol.su ./Freemaster/freemaster_rec.cyclo ./Freemaster/freemaster_rec.d ./Freemaster/freemaster_rec.o ./Freemaster/freemaster_rec.su ./Freemaster/freemaster_scope.cyclo ./Freemaster/freemaster_scope.d ./Freemaster/freemaster_scope.o ./Freemaster/freemaster_scope.su ./Freemaster/freemaster_serial.cyclo ./Freemaster/freemaster_serial.d ./Freemaster/freemaster_serial.o ./Freemaster/freemaster_serial.su ./Freemaster/freemaster_sfio.cyclo ./Freemaster/freemaster_sfio.d ./Freemaster/freemaster_sfio.o ./Freemaster/freemaster_sfio.su ./Freemaster/freemaster_tsa.cyclo ./Freemaster/freemaster_tsa.d ./Freemaster/freemaster_tsa.o ./Freemaster/freemaster_tsa.su
 
 .PHONY: clean-Freemaster
 

@@ -16,6 +16,7 @@
 #include "freemaster.h"
 #include "freemaster_private.h"
 #include "freemaster_protocol.h"
+#include "freemaster_USB.h"
 #include <stdint.h>
 
 #if !(FMSTR_DISABLE)
@@ -753,7 +754,7 @@ static void FMSTR_USB_CDC_Notify_Callback (
 ***********************************/
 
 /* USB Class Driver-related */
-extern usb_desc_request_notify_struct_t  desc_callback;
+//extern usb_desc_request_notify_struct_t  desc_callback;
 cdc_handle_t   pcm_usbHandle;
 
 /* buffer for USB packet to send */
@@ -798,6 +799,7 @@ static uint8_t FMSTR_USB_CDC_Notify_Callback(uint8_t event, uint16_t value, uint
 
 static FMSTR_BOOL FMSTR_InitUSB(void)
 {
+#if 0
     cdc_config_struct_t cdc_config;
 
     cdc_config.cdc_application_callback.callback = FMSTR_USB_CDC_Callback;
@@ -807,6 +809,11 @@ static FMSTR_BOOL FMSTR_InitUSB(void)
     cdc_config.class_specific_callback.callback = FMSTR_USB_CDC_Notify_Callback;
     cdc_config.class_specific_callback.arg = &pcm_usbHandle;
     cdc_config.desc_callback_ptr =  &desc_callback;
+
+    /* Initialize the USB interface */
+    if(USB_Class_CDC_Init(FMSTR_USB_CONTROLLER_ID, &cdc_config, &pcm_usbHandle) != USB_OK)
+        return FMSTR_FALSE;
+#endif
 
     return FMSTR_TRUE;
 }
@@ -863,7 +870,7 @@ static void FMSTR_SendUsbPacket()
             pcm_usbSendBuf[index] = TxChar;
         }
 
-       USB_Class_CDC_Send_Data(pcm_usbHandle, DIC_BULK_IN_ENDPOINT, pcm_usbSendBuf, index);
+       CDC_Transmit_FS(pcm_usbSendBuf, index);
     }
 }
 
