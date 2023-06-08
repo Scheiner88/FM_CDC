@@ -829,7 +829,7 @@ static FMSTR_BOOL FMSTR_InitUSB(void)
 static void FMSTR_ProcessUSB(void)
 {
     /* call the periodic task function */
-    USB_CDC_Periodic_Task();
+    //USB_CDC_Periodic_Task();
 
 #if FMSTR_SHORT_INTR
     /*check whether enumeration is complete or not */
