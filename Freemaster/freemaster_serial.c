@@ -787,9 +787,11 @@ static void FMSTR_ProcessUSB(void);
 static void FMSTR_SendUsbPacket(void);
 
 /* USB Class Driver Callbacks */
-static void FMSTR_USB_CDC_Callback(uint8_t event_type, void* val, void* arg);
-static uint8_t FMSTR_USB_CDC_Notify_Callback(uint8_t event, uint16_t value, uint8_t ** data,
-                                          uint32_t* size, void* arg);
+//static void FMSTR_USB_CDC_Callback(uint8_t event_type, void* val, void* arg);
+//static uint8_t FMSTR_USB_CDC_Notify_Callback(uint8_t event, uint16_t value, uint8_t ** data,
+                                          //uint32_t* size, void* arg);
+
+uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 /**************************************************************************//*!
 *

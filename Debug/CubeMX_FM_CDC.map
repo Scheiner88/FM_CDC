@@ -5244,7 +5244,7 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x0000000000000000     0xfc40
+.debug_info     0x0000000000000000     0xfc54
  .debug_info    0x0000000000000000      0x7c3 ./Core/Src/main.o
  .debug_info    0x00000000000007c3      0x2a8 ./Core/Src/stm32f4xx_hal_msp.o
  .debug_info    0x0000000000000a6b      0x650 ./Core/Src/stm32f4xx_it.o
@@ -5262,17 +5262,17 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x0000000000007f93      0x657 ./Freemaster/freemaster_protocol.o
  .debug_info    0x00000000000085ea      0x7f0 ./Freemaster/freemaster_rec.o
  .debug_info    0x0000000000008dda      0x1db ./Freemaster/freemaster_scope.o
- .debug_info    0x0000000000008fb5      0x4af ./Freemaster/freemaster_serial.o
- .debug_info    0x0000000000009464     0x130c ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
- .debug_info    0x000000000000a770      0xee7 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
- .debug_info    0x000000000000b657      0xb7f ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .debug_info    0x000000000000c1d6      0x7da ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_info    0x000000000000c9b0      0x76a ./USB_DEVICE/App/usb_device.o
- .debug_info    0x000000000000d11a      0x96f ./USB_DEVICE/App/usbd_cdc_if.o
- .debug_info    0x000000000000da89      0x498 ./USB_DEVICE/App/usbd_desc.o
- .debug_info    0x000000000000df21     0x1d1f ./USB_DEVICE/Target/usbd_conf.o
+ .debug_info    0x0000000000008fb5      0x4c3 ./Freemaster/freemaster_serial.o
+ .debug_info    0x0000000000009478     0x130c ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
+ .debug_info    0x000000000000a784      0xee7 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+ .debug_info    0x000000000000b66b      0xb7f ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .debug_info    0x000000000000c1ea      0x7da ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+ .debug_info    0x000000000000c9c4      0x76a ./USB_DEVICE/App/usb_device.o
+ .debug_info    0x000000000000d12e      0x96f ./USB_DEVICE/App/usbd_cdc_if.o
+ .debug_info    0x000000000000da9d      0x498 ./USB_DEVICE/App/usbd_desc.o
+ .debug_info    0x000000000000df35     0x1d1f ./USB_DEVICE/Target/usbd_conf.o
 
-.debug_abbrev   0x0000000000000000     0x3256
+.debug_abbrev   0x0000000000000000     0x3253
  .debug_abbrev  0x0000000000000000      0x265 ./Core/Src/main.o
  .debug_abbrev  0x0000000000000265       0xd4 ./Core/Src/stm32f4xx_hal_msp.o
  .debug_abbrev  0x0000000000000339      0x199 ./Core/Src/stm32f4xx_it.o
@@ -5290,15 +5290,15 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_abbrev  0x0000000000001948      0x15f ./Freemaster/freemaster_protocol.o
  .debug_abbrev  0x0000000000001aa7      0x29f ./Freemaster/freemaster_rec.o
  .debug_abbrev  0x0000000000001d46       0xd5 ./Freemaster/freemaster_scope.o
- .debug_abbrev  0x0000000000001e1b      0x215 ./Freemaster/freemaster_serial.o
- .debug_abbrev  0x0000000000002030      0x2be ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
- .debug_abbrev  0x00000000000022ee      0x263 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
- .debug_abbrev  0x0000000000002551      0x25c ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .debug_abbrev  0x00000000000027ad      0x18a ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_abbrev  0x0000000000002937      0x18a ./USB_DEVICE/App/usb_device.o
- .debug_abbrev  0x0000000000002ac1      0x290 ./USB_DEVICE/App/usbd_cdc_if.o
- .debug_abbrev  0x0000000000002d51      0x1da ./USB_DEVICE/App/usbd_desc.o
- .debug_abbrev  0x0000000000002f2b      0x32b ./USB_DEVICE/Target/usbd_conf.o
+ .debug_abbrev  0x0000000000001e1b      0x212 ./Freemaster/freemaster_serial.o
+ .debug_abbrev  0x000000000000202d      0x2be ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
+ .debug_abbrev  0x00000000000022eb      0x263 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+ .debug_abbrev  0x000000000000254e      0x25c ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .debug_abbrev  0x00000000000027aa      0x18a ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+ .debug_abbrev  0x0000000000002934      0x18a ./USB_DEVICE/App/usb_device.o
+ .debug_abbrev  0x0000000000002abe      0x290 ./USB_DEVICE/App/usbd_cdc_if.o
+ .debug_abbrev  0x0000000000002d4e      0x1da ./USB_DEVICE/App/usbd_desc.o
+ .debug_abbrev  0x0000000000002f28      0x32b ./USB_DEVICE/Target/usbd_conf.o
 
 .debug_aranges  0x0000000000000000      0xdd8
  .debug_aranges
@@ -5565,7 +5565,7 @@ LOAD c:/st/stm32cubeide_1.12.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_str     0x00000000000c7c8b       0x60 ./Freemaster/freemaster_scope.o
                                        0x76b5 (size before relaxing)
  .debug_str     0x00000000000c7ceb      0x3b5 ./Freemaster/freemaster_serial.o
-                                       0x88ef (size before relaxing)
+                                       0x8903 (size before relaxing)
  .debug_str     0x00000000000c80a0      0xa3b ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
                                       0xc132e (size before relaxing)
  .debug_str     0x00000000000c8adb      0x356 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o

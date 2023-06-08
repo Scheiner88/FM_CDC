@@ -29,23 +29,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 00000030  00000000  00000000  000200fc  2**0
                   CONTENTS, READONLY
- 13 .debug_info   0000fc40  00000000  00000000  0002012c  2**0
+ 13 .debug_info   0000fc54  00000000  00000000  0002012c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00003256  00000000  00000000  0002fd6c  2**0
+ 14 .debug_abbrev 00003253  00000000  00000000  0002fd80  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00000dd8  00000000  00000000  00032fc8  2**3
+ 15 .debug_aranges 00000dd8  00000000  00000000  00032fd8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_ranges 00000c58  00000000  00000000  00033da0  2**3
+ 16 .debug_ranges 00000c58  00000000  00000000  00033db0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  00023934  00000000  00000000  000349f8  2**0
+ 17 .debug_macro  00023934  00000000  00000000  00034a08  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   000103ec  00000000  00000000  0005832c  2**0
+ 18 .debug_line   000103ec  00000000  00000000  0005833c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000c9432  00000000  00000000  00068718  2**0
+ 19 .debug_str    000c9432  00000000  00000000  00068728  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000050  00000000  00000000  00131b4a  2**0
+ 20 .comment      00000050  00000000  00000000  00131b5a  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000035d4  00000000  00000000  00131b9c  2**2
+ 21 .debug_frame  000035d4  00000000  00000000  00131bac  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -13938,7 +13938,7 @@ static void FMSTR_SendUsbPacket()
  80053ea:	f3c3 0300 	ubfx	r3, r3, #0, #1
  80053ee:	b2db      	uxtb	r3, r3
  80053f0:	2b00      	cmp	r3, #0
- 80053f2:	d01a      	beq.n	800542a <FMSTR_SendUsbPacket+0x4a>
+ 80053f2:	d01b      	beq.n	800542c <FMSTR_SendUsbPacket+0x4c>
     {
         FMSTR_U8 index;
 
@@ -13975,16 +13975,16 @@ static void FMSTR_SendUsbPacket()
 
         CDC_Transmit_FS(pcm_usbSendBuf, index);
  8005420:	79fb      	ldrb	r3, [r7, #7]
- 8005422:	4619      	mov	r1, r3
- 8005424:	4804      	ldr	r0, [pc, #16]	; (8005438 <FMSTR_SendUsbPacket+0x58>)
- 8005426:	f002 f977 	bl	8007718 <CDC_Transmit_FS>
+ 8005422:	b29b      	uxth	r3, r3
+ 8005424:	4619      	mov	r1, r3
+ 8005426:	4804      	ldr	r0, [pc, #16]	; (8005438 <FMSTR_SendUsbPacket+0x58>)
+ 8005428:	f002 f976 	bl	8007718 <CDC_Transmit_FS>
     }
 }
- 800542a:	bf00      	nop
- 800542c:	3708      	adds	r7, #8
- 800542e:	46bd      	mov	sp, r7
- 8005430:	bd80      	pop	{r7, pc}
- 8005432:	bf00      	nop
+ 800542c:	bf00      	nop
+ 800542e:	3708      	adds	r7, #8
+ 8005430:	46bd      	mov	sp, r7
+ 8005432:	bd80      	pop	{r7, pc}
  8005434:	20000620 	.word	0x20000620
  8005438:	2000062c 	.word	0x2000062c
 
