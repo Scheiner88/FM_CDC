@@ -1,0 +1,12 @@
+freemaster_Kxx.c:44:6:FMSTR_Isr	1
+freemaster_Kxx.c:81:6:FMSTR_CopyMemory	2
+freemaster_Kxx.c:104:12:FMSTR_CopyToBuffer	2
+freemaster_Kxx.c:129:12:FMSTR_CopyFromBuffer	2
+freemaster_Kxx.c:143:12:FMSTR_ValueFromBuffer16	1
+freemaster_Kxx.c:148:12:FMSTR_ValueFromBuffer32	1
+freemaster_Kxx.c:153:12:FMSTR_ValueToBuffer16	1
+freemaster_Kxx.c:158:12:FMSTR_ValueToBuffer32	1
+freemaster_Kxx.c:174:6:FMSTR_CopyFromBufferWithMask	2
+freemaster_Kxx.c:209:6:FMSTR_SetExAddr	1
+freemaster_Kxx.c:221:12:FMSTR_AddressToBuffer	2
+freemaster_Kxx.c:253:12:FMSTR_AddressFromBuffer	2
