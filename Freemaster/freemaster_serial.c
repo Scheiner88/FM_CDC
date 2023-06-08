@@ -870,7 +870,7 @@ static void FMSTR_SendUsbPacket()
             pcm_usbSendBuf[index] = TxChar;
         }
 
-       CDC_Transmit_FS(pcm_usbSendBuf, index);
+        CDC_Transmit_FS(pcm_usbSendBuf, index);
     }
 }
 
@@ -888,7 +888,7 @@ static void FMSTR_SendUsbPacket()
  * that the application can start. This function also receives DATA Send and
  * RECEIVED Events.
  *****************************************************************************/
-
+#if 0
 static void FMSTR_USB_CDC_Callback (uint8_t event_type, void* val, void* arg)
 {
     uint32_t handle = *((uint32_t *)arg);
@@ -1005,6 +1005,7 @@ static uint8_t FMSTR_USB_CDC_Notify_Callback(uint8_t event, uint16_t value,
 
     return error;
 }
+#endif
 #endif /* FMSTR_USB_LEGACY_STACK */
 
 #else /* FMSTR_USE_USB_CDC */
@@ -1228,7 +1229,7 @@ void FMSTR_SendResponse(FMSTR_BPTR pResponse, FMSTR_SIZE8 nLength)
         /* Previous Send is complete. Queue next receive */
         (void)USB_Class_CDC_Interface_DIC_Recv_Data(FMSTR_USB_CDC_ID, NULL, 0);
 #else
-        USB_Class_CDC_Recv_Data(pcm_usbHandle, DIC_BULK_OUT_ENDPOINT, pcm_usbRecvBuf, DIC_BULK_OUT_ENDP_PACKET_SIZE);
+        CDC_Receive_FS(pcm_usbRecvBuf, DIC_BULK_OUT_ENDP_PACKET_SIZE);
 #endif
 
 #elif FMSTR_USE_MBED
